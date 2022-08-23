@@ -11,7 +11,12 @@ ThemeData getApplicationTheme(){
     disabledColor: ColorManager.gery1,
     splashColor: ColorManager.lightPrimary, //ripple effect color
     
-  
+    // Card View Theme
+    cardTheme: CardTheme(
+      color: ColorManager.white,
+      shadowColor: ColorManager.grey,
+      elevation: AppSize.s4
+    )
 
     // App Bar theme
 
