@@ -10,14 +10,15 @@ ThemeData getApplicationTheme() {
     primaryColor: ColorManager.primary,
     primaryColorLight: ColorManager.lightPrimary,
     primaryColorDark: ColorManager.darkPrimary,
-    disabledColor: ColorManager.gery1,
+    disabledColor: ColorManager.grey1,
     splashColor: ColorManager.lightPrimary, //ripple effect color
 
     // Card View Theme
     cardTheme: CardTheme(
-        color: ColorManager.white,
-        shadowColor: ColorManager.grey,
-        elevation: AppSize.s4),
+      color: ColorManager.white,
+      shadowColor: ColorManager.grey,
+      elevation: AppSize.s4,
+    ),
 
     // App Bar theme
     appBarTheme: AppBarTheme(
@@ -27,11 +28,31 @@ ThemeData getApplicationTheme() {
       shadowColor: ColorManager.lightPrimary,
       titleTextStyle: getRegularStyle(
         color: ColorManager.white,
-        fontSize: FontSize.s16
+        fontSize: FontSize.s16,
       ),
     ),
 
     // Button theme
+    buttonTheme: ButtonThemeData(
+      shape: const StadiumBorder(),
+      disabledColor: ColorManager.grey1,
+      buttonColor: ColorManager.primary,
+      splashColor: ColorManager.lightPrimary,
+    ),
+
+    // Elevated Button theme
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        textStyle: getRegularStyle(
+          color: ColorManager.white,
+          fontSize: AppSize.s17,
+        ),
+        primary: ColorManager.primary,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(AppSize.s12),
+        ),
+      ),
+    ),
 
     // Input Decoration theme (text form field)
   );

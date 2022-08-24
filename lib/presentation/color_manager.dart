@@ -9,7 +9,7 @@ class ColorManager {
   //new colors
   static const darkPrimary = Color(0xffd17d11);
   static const lightPrimary = Color(0xCCd17d11); // color wiyh 80% opacity 
-  static const gery1 = Color(0xff707070);
+  static const grey1 = Color(0xff707070);
   static const grey2 = Color(0xff797979);
   static const white = Color(0xffFFFFFF);
   static const error = Color(0xffe61f34); // red color
