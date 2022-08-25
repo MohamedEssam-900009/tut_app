@@ -116,21 +116,22 @@ ThemeData getApplicationTheme() {
         ),
       ),
       // error border style
-      errorBorder: OutlineInputBorder(
+      errorBorder: const OutlineInputBorder(
         borderSide: BorderSide(
           color: ColorManager.error,
           width: AppSize.s1_5,
         ),
-        borderRadius: const BorderRadius.all(
+        borderRadius: BorderRadius.all(
           Radius.circular(AppSize.s8),
         ),
       ),
-      focusedErrorBorder: OutlineInputBorder(
+      // focused error border 
+      focusedErrorBorder: const OutlineInputBorder(
         borderSide: BorderSide(
           color: ColorManager.error,
           width: AppSize.s1_5,
         ),
-        borderRadius: const BorderRadius.all(
+        borderRadius: BorderRadius.all(
           Radius.circular(AppSize.s8),
         ),
       ),
