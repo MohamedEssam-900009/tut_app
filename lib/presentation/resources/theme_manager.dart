@@ -57,23 +57,23 @@ ThemeData getApplicationTheme() {
 
     // text theme
     textTheme: TextTheme(
-      headline1: getSemiBoldStyle(
-        color: ColorManager.darkGrey,
-        fontSize: FontSize.s16,
-      ),
-      subtitle1: getMediumStyle(
-        color: ColorManager.darkGrey,
-        fontSize: FontSize.s14,
-      ),
-      caption: getRegularStyle(
-        color: ColorManager.grey1,
-      ),
-      bodyText1: getRegularStyle(
-        color: ColorManager.grey,
-      ),
       displayLarge: getLightStyle(
         color: ColorManager.white,
         fontSize: FontSize.s22,
+      ),
+      headlineLarge: getSemiBoldStyle(
+        color: ColorManager.darkGrey,
+        fontSize: FontSize.s16,
+      ),
+      titleMedium: getMediumStyle(
+        color: ColorManager.darkGrey,
+        fontSize: FontSize.s14,
+      ),
+      bodyLarge: getRegularStyle(
+        color: ColorManager.grey1,
+      ),
+      bodySmall: getRegularStyle(
+        color: ColorManager.grey,
       ),
     ),
 
@@ -125,7 +125,7 @@ ThemeData getApplicationTheme() {
           Radius.circular(AppSize.s8),
         ),
       ),
-      // focused error border 
+      // focused error border
       focusedErrorBorder: const OutlineInputBorder(
         borderSide: BorderSide(
           color: ColorManager.error,
